@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0px;
+}
+
+.app {
+    height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0px 5rem 0px;
+}
+
+.app-component {
+    width: 80%;
+    background-color: rgb(188, 205, 207);
+    border-radius: 10px;
+}
+
+.app__title {
+    font-size: 4rem;
+    color: purple;
+    text-align: center;
+    /* box-shadow: 0 20px 10px -0.7px; */
+}
+
+.app__annotation {
+    /* height: 3.5rem; */
+    width: 80%;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.annotation__text {
+    font-size: 2rem;
+}
+
+.app__form {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+}
+
+.form__label {
+    width: 20%;
+    font-size: 2rem;
+    /* margin-right: 1rem; */
+}
+
+.form__field{
+    width: 60%;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 4rem;
+    font-size: 2rem;
+}
+
+.form__operation {
+    width: 59%;
+    height: 4rem;
+    margin-right: 1%;
+    font-size: 2rem;
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form__btn {
+    width: 20%;
+    height: 4rem;
+    font-size: 2rem;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+
+.form__btn:hover {
+    font-size: 2.1rem;
+    transition: ease-in-out 0.1s;
+}
+
+.app__counter {
+    width: 80%;
+    text-align: center;
+    font-size: 3.5rem;
+    color: brown;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.counter__text {
+    font-size: 3rem;
+    color: black;
+}
+
+.flex__reset {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+    align-items: center;
+}
+
+.empty__space {
+    width: 60%;
+}
+
+.app__reset {
+    align-self: flex-end;
+    width: 20%;
+    font-size: 3rem;
+    background-color: brown;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.app__reset:hover {
+    background-color: rgb(175, 78, 78);
+    color: wheat;
+    transition: ease-in-out 0.3s;
+}
+
+@media(max-width: 740px) {
+    html {
+        font-size: 9px;
+    }
+
+    .form__label {
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width: 600px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media(max-width: 500px) {
+    html {
+        font-size: 7px;
+    }
+
+    .app__reset {
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width: 400px) {
+    html {
+        font-size: 6px;
+    }
+    .app__reset {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 300px) {
+
+    .app__reset {
+        font-size: 1.5rem;
+    }
+
+    .form__btn {
+        font-size: 1.5rem;
+    }
+}
