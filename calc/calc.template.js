@@ -52,7 +52,7 @@ class CalcTemplate {
     }
 
     renderCounter(counter) {
-        this.counter.innerHTML = `${counter}`
+        this.counter.innerHTML = counter % 1 ? `${Math.round(counter)} <span class="counter__text">(the result has been rounded)</span>` : `${counter}`
     }
 
     onCalculateResult(cb) {
@@ -143,7 +143,5 @@ class CalcTemplate {
             this.cleanField()
         })
     }
-
-
     
 }

@@ -21,7 +21,9 @@ class CalcComponent {
         if (value1 === '' || value2 === '') {
             this.result = 'Please, fill all inputs'
         } else if (isNaN(value1) || isNaN(value2)) {
-            this.result = 'Please, enter numbers only'
+            this.result = 'Please, enter numbers only' 
+        } else if (value1 === 0 && value2 === 0 && operator === '/') {
+            this.result = 'Error'
         } else if(operator === '+') {
             this.addOperation(value1, value2);
 
@@ -36,10 +38,6 @@ class CalcComponent {
             
         } else {
             this.result = 'Choose Operation!'
-        }
-
-        if (this.result % 1) {
-            this.result = `${Math.round(this.result)} <span class="counter__text">(the result has been rounded)</span>`
         }
 
         this.calcTemplate.renderCounter(this.result)
