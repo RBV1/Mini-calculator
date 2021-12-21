@@ -191,7 +191,7 @@ body {
     }
 }
 
-@media(max-height: 740px) {
+@media(max-height: 400px) {
 
     .app {
         height: 100%;
