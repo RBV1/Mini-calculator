@@ -90,7 +90,6 @@ class CalcTemplate {
 
     onShowAnnotation(cb) {
         this.annotation.addEventListener('click', () => {
-            console.dir(this.host.parentElement);
             let openHeight = 36;
             let closeHeight = 86;
             if (this.host.parentElement.scrollWidth < 1285) {
@@ -105,10 +104,8 @@ class CalcTemplate {
             const state = cb();
             if(state === 'opened'){
                 let id = setInterval(() => {
-                    console.log('ss');
                     openHeight += 1
                     this.annotation.style.height = openHeight + 'px'
-                
                 
                     if(openHeight === closeHeight) {
                         clearInterval(id)
@@ -125,7 +122,6 @@ class CalcTemplate {
                 this.annotation.innerHTML = `
                 `
                 let id = setInterval(() => {
-                    console.log('ss');
                     closeHeight -= 1
                     this.annotation.style.height = closeHeight + 'px'
         

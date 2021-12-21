@@ -62,7 +62,6 @@ class CalcComponent {
     }
 
     showAnnotation() {
-        console.log(this.shownAnnotation.position);
         this.shownAnnotation = {...this.shownAnnotation, position: this.shownAnnotation.possiblePositions.filter(pos => pos !== this.shownAnnotation.position)[0]}
         return this.shownAnnotation.position
     }
