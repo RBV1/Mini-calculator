@@ -190,3 +190,11 @@ body {
         font-size: 1.5rem;
     }
 }
+
+@media(max-height: 740px) {
+
+    .app {
+        height: 100%;
+    }
+
+}
